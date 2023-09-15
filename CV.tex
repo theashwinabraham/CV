@@ -1,0 +1,376 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\moderncvstyle{banking} % 'casual', 'classic', 'oldstyle' 'banking', 'fancy'
+\moderncvcolor{blue} % 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[a4paper,bottom=6.4mm,left=14.11mm,right=14.11mm,top=12mm]{geometry}
+\newif\iflong
+\longtrue
+\addtolength{\voffset}{-3.5em}
+\addtolength{\textheight}{7em}
+\setlength{\hintscolumnwidth}{2cm} % width of dates column
+
+
+\newcommand{\entry}[6]%
+{\cventry[0.85em]{#4}{#3}{#2}{#1}{#5}{#6}} % banking
+\newcommand{\cvurl}[1]{\bgroup\color{blue}\normalfont\url{#1}\egroup}
+\newcommand{\arxiv}[1]{\bgroup\color{blue}\normalfont\rmfamily%
+\href{http://arxiv.org/abs/#1}{arXiv:#1}\egroup}
+
+\newcommand{\makefield}[2]{\makebox[1.5em]{\color{blue}#1} #2\hspace{2em}}
+
+
+\begin{filecontents}{biblio.bib}
+
+\end{filecontents}
+
+\usepackage[style=chem-rsc,maxnames=7]{biblatex}
+\addbibresource{biblio.bib}
+
+
+\newcommand{\subtext}[1]{\bgroup\footnotesize\rmfamily\color{black}#1\egroup}
+\newcommand{\previous}[1]{\bgroup\color{black}\bfseries#1\egroup}
+
+\newcommand{\job}[4]{\smallskip\cvitemwithcomment{#2}{#1}{#3}%
+\unskip\subtext{#4}\medskip}
+
+\newcommand{\pub}[2]{\cvlistitem{#1. \\ \subtext{#2}}\smallskip}
+\newcommand{\paper}[3]{\pub{#1}{#2. \arxiv{#3}.}}
+
+\name{Ashwin}{Abraham}
+\lfoot{\emph{Last updated \today}}
+
+\begin{document}
+\iflong
+  \addtolength{\topmargin}{9.54mm}
+\fi
+\vspace*{1pt}
+
+\setlength{\arrayrulewidth}{0.5mm}
+\begin{minipage}{0.15\linewidth}
+    \centering
+    \includegraphics[height =1.0in]{iitb.png}
+\end{minipage}
+\begin{minipage}{0.65\linewidth}
+    %\centering
+    \setlength{\tabcolsep}{18pt}
+    \def\arraystretch{1.15}
+    \begin{tabular}{ll}
+        \textbf{\Large{Ashwin Abraham}} & \makefield{\faEnvelope}{\href{mailto:ashwinabraham@cse.iitb.ac.in}{\texttt{ashwinabraham@cse.iitb.ac.in}}} \\
+        \textbf{Computer Science \& Engineering} & \makefield{\faGlobe}{\href{https://theashwinabraham.github.io}{\texttt{theashwinabraham.github.io}}} \\
+        \textbf{Indian Institute of Technology, Bombay} & \makefield{\faGithub}{\href{https://github.com/theashwinabraham}{\texttt{theashwinabraham}}}\\
+    \end{tabular}
+\end{minipage}\hfill
+
+% \setlength{\tabcolsep}{18pt}
+% \begin{center}
+%   \begin{tabular}{ll}
+%       \textbf{\Large{Dhananjay Raman}}  & \textbf{Roll No.: 210050044} \\
+%       \textbf{Computer Science \& Engineering} & \textbf{B.Tech.} \\
+%       \textbf{Indian Institute of Technology, Bombay} & \textbf{DOB: 9 Feb 2004} \\
+%   \end{tabular}
+% \end{center}
+% \setlength{\tabcolsep}{0pt}
+
+\setlength{\tabcolsep}{18pt}
+\begin{center}
+  \begin{tabular}{lllll}
+  \toprule
+  \textbf{Examination}& \textbf{University}& \textbf{Institute}& \textbf{Year}& \textbf{CPI/\%} \\ 
+  \toprule
+  Graduation  & IIT Bombay & IIT Bombay  & 2025   & 9.39\\ 
+  Intermediate     & CBSE  & Narayana e-Techno School, Chennai & 2021       & 97.00\%    \\ 
+  Matriculation   & CBSE   & MVM School, Chennai    & 2019          & 93.60\%   \\
+  \bottomrule \\[-0.75cm]
+  \end{tabular}
+\end{center}
+\setlength{\tabcolsep}{0pt}
+Pursuing \textbf{Honours} in \textbf{Computer Science} and a \textbf{Minor} in \textbf{Artificial Intelligence \& Machine Learning}
+\vspace*{-1em}
+
+\section{Scholastic Achievements}
+\cvitemwithcomment{}{Secured \textbf{Institute Rank 1} among \textbf{1400+} students and received the \textbf{Institute Academic Award}}{2022}
+\cvitemwithcomment{}{Conferred the \textbf{AP (Advanced Proficiency) grade} in \textbf{3 courses}, given to less than \textbf{1\%} of students}{2021-22}
+\cvitemwithcomment{}{Secured \textbf{All India Rank 18} out of \textbf{140k+} candidates appearing for the \textbf{JEE Advanced} examination}{2021}
+\cvitemwithcomment{}{Obtained \textbf{100 percentile} and \textbf{All India Rank 12} in the \textbf{JEE Main} and was the \textbf{State Topper}}{2021}
+% \cvitemwithcomment{}{Achieved \textbf{All India Rank 148} in \textbf{Joint Entrance Examination} (Main) amongst \textbf{$\sim$1 million} students}{2021}
+\cvitemwithcomment{}{Conferred the \textbf{KVPY Scholarship} by the Indian Govt, with \textbf{All India Rank 6} among \textbf{100k} candidates}{2020}
+\cvitemwithcomment{}{Was awarded the \textbf{AP Scholar Award with Honors} by the \textit{College Board} after scoring 5/5 in these exams:}{}
+\vspace*{-1.5mm}
+\cvitemwithcomment{}{\textit{Calculus BC (with AB subscore), Physics C Mechanics, Physics C Electromagnetism}, and \textit{Chemistry}}{2018-20}
+
+\cvitemwithcomment{}{Among the \textbf{top 39} students nationwide selected for OCSC \textbf{(International Junior Science Olympiad)} }{}
+\vspace*{-1.5mm}
+\cvitemwithcomment{}{after clearing the \textit{Indian National Junior Science Olympiad} and received the \textbf{NSEJS-INJSO Gold Medal}}{2019}
+%\cvitemwithcomment{}{Among the \textbf{top 47} students nationwide selected for OCSC \textbf{(International Olympiad, Astronomy and Astrophysics)}}{}
+% \cvitemwithcomment{}{Secured the \textbf{Junior Science Talent Search Examination} scholarship, conferred by \textbf{Govt. of Delhi}}{2018}
+\vspace*{-5mm}
+\section{Research Experience}
+\cventry{\small{Research Internship}}{\small{Prof. Parosh Abdulla, Uppsala University; Prof. Ashutosh Gupta, Prof. Krishna S, IIT Bombay}}{Parametrized Verification of Concurrent Systems via View Abstraction}{Summer 2023}{}{
+  \begin{itemize}
+    \item Read and implemented a \bgroup\color{blue}\href{https://link.springer.com/article/10.1007/s10009-015-0406-x}{paper}\egroup\  describing a new approach to Parametrized Verification through \textit{View Abstraction}
+    \item Prepared a \bgroup\color{blue}\href{https://theashwinabraham.github.io/notes/view_abstraction_report.pdf}{report}\egroup\ on the paper, focusing on an algorithm that verifies the correctness of \textbf{concurrent algorithms} such as \textit{Szymanski's Protocol} using the technique of View Abstraction, and presented the report to the authors of the paper
+    \item \textbf{Implemented} and \textbf{optimized} the algorithm by using various data structures and algorithms to increase performance
+    \item Used the \textbf{LLVM API} to the \textbf{clang C compiler} to write an LLVM pass that converts multithreaded C programs into an \textit{abstract representation} as a transition system whose transitions may be either existentially guarded or universally guarded
+    \item Integrated the verifying algorithm into the LLVM ecosystem and modified it to check the safety of these transition systems in order to verify the correctness of the multithreaded C program or produce counterexamples to prove unsafeness
+    \item Targeting a publication in the near future that may be presented in major conferences such as POPL
+  \end{itemize}
+}
+
+\cventry{\small{Research Project}}{\small{Prof. Raghavan B Sunoj, IIT Bombay}}{Machine Learning in Chemistry}{Spring 2023}{}{
+  \begin{itemize}
+    \item Presented a \textbf{novel approach} inspired by \textbf{Reinforcement Learning algorithms} to identify the energy profile of the intermediates in a chemical reaction by using \textbf{Markov Chains} in order to simulate the evolution of a chemical reaction
+    \item Read multiple papers on \textbf{Transfer Learning} applied to predict the efficacy of various catalysts in chemical reactions
+    \item Reviewed ML protocols to predict the efficacy of asymmetric catalysts, utilizing techniques such as \textbf{SMOTE} (\textit{Synthetic Minority 
+    Oversampling Technique}) to address issues such as the class imbalance in chemical data 
+  \end{itemize}
+}
+
+\cventry{\small{Ongoing Research Project}}{\small{Prof. S Akshay, IIT Bombay}}{Markov Decision Processes as Distribution Transformers: Safety Objectives}{Autumn 2023}{}{
+  \begin{itemize}
+    \item Surveyed the \bgroup\color{blue}\href{https://arxiv.org/abs/2305.16796}{literature}\egroup\  on Markov Decision Processes as transformers of probability distributions and the associated safety problem on the trajectories of distributions generated given a policy on the MDP and an affine linear set of safe distributions
+    % \item Worked on open problems like proving bounds and finding algorithms for \textbf{flipped graphs of triangulations}
+    \item Investigating the complexity of determining the existence of policies that keep the generated distributions within the safe set
+    \item Also investigating algorithms to generate safe policies, if they exist, and the nature of the generated safe policies 
+  \end{itemize}
+}
+
+
+\vspace*{-4mm}
+
+\section{Key Projects}
+\cventry{}{}{Reinforcement Learning for a Chess Engine}{Winter 2022 \& Summer 2023}{}{
+  \vspace*{-5mm}
+  \begin{itemize}
+    \item \textbf{Mentored 15+ students} in a \textbf{Reading} and \textbf{Implementation} project on Reinforcement Learning %over the vacations
+	  \item Followed the book on RL by \textit{Sutton \& Barto} and prepared a \bgroup\color{blue}\href{https://theashwinabraham.github.io/notes/RL_report.pdf}{report}\egroup\ for mentees summarizing multiple chapters in the book%, proving many properties of \textbf{Markov Decision Processes} and the correctness of algorithms used to solve them
+	  \item Guided mentees and helped them implement various algorithms such as \textbf{Thompson Sampling} and the \textbf{Upper Confidence Bound Algorithm} to solve \textbf{Multi-Armed Bandits} by estimating the expected reward of each action
+	  \item Assisted mentees in implementing RL algorithms such as \textbf{Deep Q-Learning} to find \textbf{optimal policies} for various RL environments such as \textit{Mountain Car}, \textit{Lunar Lander} and \textit{Atari: Breakout} from the \textbf{OpenAI gymnasium}
+	  \item Helped mentees in designing a \textbf{Chess Engine} using Deep Reinforcement Learning, similiar to \textit{AlphaZero}
+  \end{itemize}
+}
+
+
+
+\newpage
+\newgeometry{bottom=6.4mm,left=14.11mm,right=14.11mm,top=16mm}
+\cventry{\small{Ongoing Course Project}}{\small{Prof. Preethi Jyothi, IIT Bombay}}{Generative Learning with Denoising Diffusion GANs}{Autumn 2023}{}{
+  \begin{itemize}
+    \item Implementing a \bgroup\color{blue}\href{https://openreview.net/pdf?id=JprM0p-q0Co}{paper}\egroup\ describing a novel approach to denoising images by using \textit{denoising diffusion GANs}
+    \item Aiming to solve the \textit{Generative Learning Trilemma} by achieving high sample quality, mode coverage, and fast sampling
+    \item Optimizing performance by using complex multimodal distributions in the denoising steps instead of Gaussian distributions
+  \end{itemize}
+}
+
+\cventry{\small{Course Project}}{\small{Prof. Kavi Arya, IIT Bombay}}{FastChat}{Autumn 2022}{}{
+  \begin{itemize}
+    \item Developed an \textbf{instant-messaging service} akin to \textbf{WhatsApp} with a \textbf{Terminal User Interface} and features such as \textbf{group chats}, \textbf{file transfer} and \textbf{offline messaging} using \textbf{PostgreSQL} and the socket programming libraries of Python
+    \item Added \textbf{end-to-end encryption} between clients and encrypted all connections using a \textbf{Fernet encryption scheme}
+    \item Achieved \textbf{high throughput} and \textbf{low latency} by adding \textbf{multiserver support} and Round Robin based \textbf{load balancing} 
+  \end{itemize}
+}
+
+
+\cventry{\small{Course Project}}{\small{Prof. Biswabandan Panda, IIT Bombay}}{Cache Prefetcher and Hierarchy Optimization for Graph Analytics}{Spring 2023}{}{
+  \begin{itemize}
+    \item Implemented a \bgroup\color{blue}\href{https://inria.hal.science/hal-01165600/document}{paper}\egroup\ describing a \textbf{Best Offset Hardware Prefetcher} that learnt the best offset based on recent accesses
+    \item Reviewed various characteristics of traces associated with \textbf{Graph Processing Workloads} such as Dijkstra's Algorithm
+    \item Implemented and compared various cache replacement policies such as LFU and LRU using the Champsim simulator
+    \item Adjusted the cache size, replacement policy, and inclusion policy to optimize performance on Graph Processing Workloads
+    %\item Explored a flexible, data-aware hierarchy called \textbf{GraphFire} utilizing merged cache blocks for fine-grained accesses
+  \end{itemize}
+}
+
+\cventry{\small{Course Project}}{\small{Prof. Supratik Chakraborty, IIT Bombay}}{Rail Planner}{Autumn 2022}{}{
+  \begin{itemize}
+    \item Developed a \textbf{command line application} in C++ for rail travel and journey planning which integrates checking trip prices, booking a journey, viewing and managing current journeys and trip reveiws, taking inspiration from real-world apps
+	  \item Implemented all the data structures and algorithms required for the application \textbf{manually}, including \textbf{Binary Search Trees}, \textbf{Hash Maps} and \textbf{Graphs} to store, retrieve and sort journeys from \textbf{large databases} in order to quickly respond to queries
+	  \item Utilized \textbf{Tries} in order to add predictive autocompletion and the \textbf{KMP Algorithm} for pattern matching
+	  \item Implemented various Graph Algorithms such as \textbf{Breadth First Search} and \textbf{Dijkstra's Algorithm} to find optimal routes
+  \end{itemize}
+}
+
+\addtolength{\voffset}{3.5em}
+
+
+\section{Other Projects}
+\cventry{\small{Course Project}}{\small{Prof. Suyash Awate, IIT Bombay}}{Statistical Analysis and Machine Learning}{Autumn 2022}{}{
+  \begin{itemize}
+    \item Used PCA to analyze images of handwritten digits from the MNIST Database and optimally reduce their dimensionality
+    \item After this, implemented \textbf{Gaussian Discriminant Analysis} in order to build a handwritten digit classifier from scratch
+    \item Implemented a PCA based algorithm that takes in a dataset of images of fruits and augment the dataset with \textbf{new images}
+	  \item Utilized MATLAB to sample points in the Euclidean Plane distributed according to various Multivariate Distributions
+  \end{itemize}
+}
+
+\cventry{}{}{Memory Allocator}{Winter 2022}{}{
+  \vspace*{-5mm}
+  \begin{itemize}
+    \item Designed a memory allocator \textbf{from scratch} in C using only Linux system calls such as \texttt{mmap} and \texttt{munmap}
+	  \item Learnt about \textbf{virtual memory} and paging in Linux and implemented the \textbf{First-Fit Algorithm} to allocate memory
+    \item Incorporated logic for merging and splitting memory blocks to optimize memory utilization and minimize fragmentation
+    \item Created an API similiar to the standard \texttt{libc} API, with implementations of \texttt{malloc}, \texttt{calloc}, \texttt{realloc} and \texttt{free}
+  \end{itemize}
+}
+\cventry{\small{Course Project}}{\small{Prof. Bhaskaran Raman, IIT Bombay}}{Telecommunication System Design}{Spring 2023}{}{
+  \begin{itemize}
+    \item Built a physical layer for communication between two devices with \textbf{sound} as a medium using the \textbf{PyAudio} library
+	  \item Encoded the data into the \textbf{frequency} of the sound generated, in order to maximize throughput and minimize data loss
+	  \item Implemented an \textbf{Error Correcting Code} that could correct one-bit errors using the \textbf{Hamming 4/7 encoding}
+  \end{itemize}
+}
+
+\cventry{\small{Course Project}}{\small{Prof. Ashutosh Gupta, IIT Bombay}}{Solving Puzzles Using SAT Solvers}{Spring 2023}{}{
+  % \vspace{-1.3em}
+  \begin{itemize}
+    \item Modelled the \textbf{Sliding Tile Puzzle} as a SAT Problem in Z3 Solver using optimal number of variables and clauses
+	  \item Used the Python API of the Z3 solver to check if the puzzle had a solution and to find the solution
+  \end{itemize}
+}
+
+
+\cventry{}{}{x86 Assembly and CPU emulator}{Autumn 2022}{}{
+  \vspace*{-5mm}
+  \begin{itemize}
+    \item Studied the references given by the \textit{CyberSecurity Club, IIT Bombay} to learn about \textbf{Assembly Programming}
+	  \item Implemented multiple elementary programs in \textbf{Assembly Language} using Intel Syntax for \textbf{64 bit x86 CPUs}
+	  \item Developed a \textbf{CPU Emulator} in C for an 8 bit CPU with 256 bytes of RAM based on the references given
+  \end{itemize}
+}
+
+\cventry{}{}{Browser Based Chess Game}{Spring 2022}{}{
+  \vspace{-1.3em}
+  \begin{itemize}
+    \item Developed a \textbf{browser based game of Chess} using HTML, CSS and JavaScript utilizing the \textbf{fabric.js} library
+	  \item Implemented \textbf{Single Player} and \textbf{Two Player} modes and added support for Hexagonal Chess and Fischer Random Chess
+  \end{itemize}
+}
+
+\cventry{}{}{Sudoku Solver}{Autumn 2021}{}{
+  \vspace{-1.3em}
+  \begin{itemize}
+    \item Developed and implemented an algorithm from scratch to solve a given puzzle of Sudoku based on backtracking
+	  \item Wrote a command line application in which the aforementioned algorithm was implemented in C++
+  \end{itemize}
+}
+
+\section{Positions of Responsibility}
+\cventry{}{\small{Department of Computer Science, Department of Mathematics}}{Teaching Assistant}{Autumn 2022 - Present}{}{
+  % \vspace*{-5mm}
+  \begin{itemize}
+    \item Was a Teaching Assistant for the following courses:\\
+    \setlength{\tabcolsep}{18pt}
+    \begin{tabular}{lll}
+      CS 228M & \textbf{Logic in Computer Science} & \textit{Prof. Krishna S}\\
+      CS 230/231 & \textbf{Computer Architecture (\& Lab)} & \textit{Prof. Biswabandan Panda}\\
+      % CS 231 & \textbf{Computer Architecture Lab} & Prof. Biswabandan Panda\\
+      MA 109 & \textbf{Calculus I} & \textit{Prof. Sanjoy Pusti}, \textit{Prof. Madhusudhan Manjunath}\\
+      MA 111 & \textbf{Calculus II} & \textit{Prof. Niranjan Balachandran}, \textit{Prof. Preeti Raman}\\
+      MA 106 & \textbf{Linear Algebra} & \textit{Prof. Dipendra Prasad}, \textit{Prof. Jugal K Verma}\\
+    \end{tabular}
+    \item Conducted weekly tutorial sessions for batches of \textbf{40+ students} for the courses MA 109, MA 111, MA 106 and CS 228M
+    \item Created Lab Assignments on Assembly Programming and code profiling and optimization for CS 230/231
+    \item Assisted in evaluation of answer scripts, grading and crib handling for the courses mentioned above
+  \end{itemize}
+  % \begin{itemize}
+  %   \item MA 109 - Calculus I
+  %   \item MA 111 - Calculus II
+  %   \item MA 106 - Linear Algebra
+  %   \item CS 228 (M) - Logic in Computer Science
+  %   \item CS 230 - Computer Architecture
+  %   \item CS 232 - Computer Architecture Lab
+  % \end{itemize}
+}
+
+% \cventry{}{\small{Winter in Data Science, Seasons of Code}}{Mentor: Reinforcement Learning Project}{Winter 2022 \& Summer 2023}{}{
+%   % \vspace*{-5mm}
+%   \begin{itemize}
+%     \item Represent the undergraduate student body of the department in the \textit{Department Undergraduate Committee}, responsible for planning all academic activities in the Department, such as fixing the curriculum and the academic programme
+%   \end{itemize}
+% }
+
+\cventry{}{\small{Department of Computer Science and Engineering}}{Associate Department General Secretary}{2023 - Present}{}{
+  % \vspace*{-5mm}
+  \begin{itemize}
+    \item Represent the undergraduate student body of the department in the \textit{Department Undergraduate Committee}, responsible for planning all academic activities in the Department, such as fixing the curriculum and the academic programme
+  \end{itemize}
+}
+
+\cventry{}{\small{Student Mentorship Program, IIT Bombay}}{Department Academic Mentor}{2023 - Present}{}{
+  % \vspace*{-5mm}
+  \begin{itemize}
+    \item Served as a DAMP Mentor in the Department Academic Mentorship Program, providing guidance, support and assistance to sophomore students and above in order to facilitate the academic and personal development of the students
+  \end{itemize}
+}
+
+\cventry{}{\small{Undergraduate Academic Council, IIT Bombay}}{Academic Coordinator, Student Support Services}{2022 - 23}{}{
+  % \vspace*{-5mm}
+  \begin{itemize}
+    \item Catered to the academic demands of over 5000 undergraduates across all departments in IIT Bombay, by compiling and releasing resources for courses, conducting help sessions, assisting in the selection of Teaching Assistants, and so on
+  \end{itemize}
+}
+
+\cventry{}{}{Class Representative}{2021 - 22}{}{
+  \vspace*{-5mm}
+  \begin{itemize}
+    \item Represented the class to the Faculty Members and helped disseminate information and schedule examinations and classes
+  \end{itemize}
+}
+\vspace*{-1em}
+\section{Relevant Courses Undertaken}
+\vspace*{-1em}
+\begin{multicols}{3}
+\begin{itemize}
+  \item AI \& Machine Learning$^{\dag}$
+  \item Logic for Computer Science
+  % \item Software Systems Lab
+  % \item Electromagnetism
+  \item Discrete Mathematics
+  \item Optimization
+  \item Quantum Computing
+  \item Quantum Physics
+  \item Programming Paradigms$^{\dag}$
+  \item Reinforcement Learning
+  \item Automata Theory
+  \item Data Analysis and Interpretation
+  \item Software Systems Lab
+  \item Computer Architecture$^{\dag}$
+  \item Operating Systems$^{\dag}$
+  \item Computer Networks$^{\dag}$
+  \item Game Theory \& Mech. Design
+  \item Applied Algorithms
+  \item Algorithm Design and Analysis
+  \item Data Structures and Algorithms$^{\dag}$
+  \item Calculus
+  \item Linear Algebra
+  \item Differential Equations
+\end{itemize}
+\end{multicols}
+\vspace*{-6mm}
+\begin{flushright}
+  Courses labelled with $^{\dag}$ had separate theory and lab components
+\end{flushright}
+\vspace*{-6mm}
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{ l | l }
+	\textbf{Programming Languages  } & \quad C/C++, Python, Java, Bash, \LaTeX, MATLAB, x86 Assembly, Prolog, Sed, Awk\\
+        \textbf{ML and Data Science  } & \quad TensorFlow, Keras, PyTorch, scikit-learn, NumPy, Pandas, MatPlotLib\\
+        \textbf{Development  } & \quad Jupyter Notebook, Doxygen, Sphinx, HTML5, CSS, JavaScript, Bootstrap, LLVM\\
+\end{tabularx}
+\section{Extracurricular Activities}
+\cvitemwithcomment{}{Awarded \textbf{2nd} prize and a cash prize of \textbf{Rs 3000} in \textit{CodeWars v1: Virus Wars}, India's first}{}
+\vspace*{-1.2mm}
+\cvitemwithcomment{}{Bot Programming Contest conducted by the Web and Coding Club, IIT Bombay}{Jan 2022}
+\cvitemwithcomment{}{Coinvented an \textit{aerosol trapping device} (\textbf{patent pending}) to prevent spread of COVID 19 during surgeries}{2020}
+\cvitemwithcomment{}{Coinvented an \textit{every-day use consumer mask} (\textbf{patent pending}) with anti-fog measures allowing}{}
+\vspace*{-1.2mm}
+\cvitemwithcomment{}{transparency, facial recognition, and sensors allowing use while dining and during social events}{2020}
+\cvitemwithcomment{}{Mentored and guided JEE Aspirants of 2022 and 2023 batches from across the nation}{2021-22}
+\cvitemwithcomment{}{Volunteered with the not-for-profit \textit{Eye Research Centre, Chennai} to combat preventible blindness}{2017-19}
+\cvitemwithcomment{}{Selected for \textbf{International Level} of the \textit{Wordsworth International Spelling Bee}}{2011}
+\end{document}
